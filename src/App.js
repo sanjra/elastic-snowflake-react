@@ -6,7 +6,7 @@ export default function App() {
   return (
     <div className="App">
       <div className="container">
-        <Weather />
+        <Weather defaultCity="Melbourne" />
         <footer>
           <p>Sanjra created this application using React.</p>
           <p>
