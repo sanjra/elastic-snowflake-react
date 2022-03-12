@@ -45,6 +45,7 @@ export default function Weather() {
             </div>
           </div>
         </div>
+
         <div className="col-6">
           <ul>
             <li>Precipitation: 00%</li>
@@ -53,7 +54,6 @@ export default function Weather() {
           </ul>
         </div>
       </div>
-      This is a Weather.js
     </div>
   );
 }
