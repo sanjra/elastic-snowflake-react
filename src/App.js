@@ -4,28 +4,29 @@ import "./App.css";
 export default function App() {
   return (
     <div className="App">
-      <footer>
-        <p>
-          Sanjra created this application using React.{" "}
-          <a
-            className="App-link"
-            href="https://github.com/sanjra/elastic-snowflake-react"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            github link here.
-          </a>
-          <br />{" "}
-          <a
-            className="App-link"
-            href="https://compassionate-payne-4184c1.netlify.app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            Netify link here.
-          </a>
-        </p>
-      </footer>
+      <div className="container">
+        <footer>
+          <p>
+            Sanjra created this application using React.{" "}
+            <a
+              className="App-link"
+              href="https://github.com/sanjra/elastic-snowflake-react"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              github link here.
+            </a>{" "}
+            <a
+              className="App-link"
+              href="https://compassionate-payne-4184c1.netlify.app"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              Netify link here.
+            </a>
+          </p>
+        </footer>
+      </div>
     </div>
   );
 }
