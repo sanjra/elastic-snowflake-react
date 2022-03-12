@@ -8,11 +8,19 @@ export default function App() {
         <p>Sanjra created this application using React.</p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/sanjra/elastic-snowflake-react"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Netlify link here.
+          github link here.
+        </a>
+        <a
+          className="App-link"
+          href="https://compassionate-payne-4184c1.netlify.app"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Netify link here.
         </a>
       </footer>
     </div>
