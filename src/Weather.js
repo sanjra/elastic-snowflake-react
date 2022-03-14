@@ -16,7 +16,7 @@ export default function Weather(props) {
       country: response.data.sys.country,
       date: new Date(response.data.dt * 1000),
       description: response.data.weather[0].description,
-      iconUrl: `http://openweathermap.org/img/wn/${response.data.weather[0].icon}@2x.png`,
+      icon: response.data.weather[0].icon,
       city: response.data.name,
     });
   }
@@ -32,7 +32,7 @@ export default function Weather(props) {
 
   function search() {
     const apiKey = "34ae1065362d42545661451bda2b8a1f";
-    let apiUrl = `http://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
+    let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=metric`;
     axios.get(apiUrl).then(handleResponse);
   }
 
@@ -43,18 +43,18 @@ export default function Weather(props) {
           <div className="row">
             <div className="col-9">
               <input
-                className="form-control"
                 type="search"
                 placeholder="Enter a City.."
+                className="form-control"
                 autoFocus="on"
                 onChange={handleCityChange}
               />
             </div>
             <div className="col-3">
               <input
-                className="btn btn-dark w-100"
                 type="submit"
                 value="Search"
+                className="btn btn-dark w-100"
               />
             </div>
           </div>
