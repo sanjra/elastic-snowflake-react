@@ -1,0 +1,32 @@
+import React from "react";
+import WeatherIcon from "./WeatherIcon";
+import "./WeatherForecast.css";
+import axios from "axio";
+
+export default function WeatherForecast(props) {
+  function handleResponse(response) {
+    console.log(response.data);
+  }
+
+  let apiKey = "34ae1065362d42545661451bda2b8a1f";
+  let longitude = props.coordinates.lon;
+  let latitude = props.coordinates.lat;
+  let apiUrl = `https://api.openweathermap.org/data/2.5/onecall?lat=${latitude}&lon=${longitude}&appid=${apiKey}&units=metric`;
+
+  axios.get(apiUrl).then(handleResponse);
+
+  return (
+    <div className="WeatherForecast">
+      <div className="row">
+        <div className="col">
+          <div className="WeatherForecast-day">Saturay</div>
+          <WeatherIcon code="01d" size={36} />
+          <div className="WeatherForecast-temperatures">
+            <span className="WeatherForecast-temperature-max">35°</span>
+            <span className="WeatherForecast-temperature-min">17°</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+}
