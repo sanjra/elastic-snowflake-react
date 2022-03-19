@@ -1,7 +1,7 @@
 import React from "react";
 import WeatherIcon from "./WeatherIcon";
 import "./WeatherForecast.css";
-import axios from "axio";
+import axios from "axios";
 
 export default function WeatherForecast(props) {
   function handleResponse(response) {
