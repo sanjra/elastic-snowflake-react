@@ -25,7 +25,7 @@ export default function App() {
               target="_blank"
               rel="noopener noreferrer"
             >
-              Netify link here.
+              hosted on Netlify.
             </a>
           </p>
         </footer>
