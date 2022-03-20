@@ -13,6 +13,10 @@
   margin: 20px 0 0 0;
 }
 
+.Weather h3 {
+  font-size: 20px;
+}
+
 .Weather ul {
   margin: 0;
   padding: 0;
