@@ -8,9 +8,8 @@ export default function App() {
       <div className="container">
         <Weather defaultCity="New York" />
         <footer>
-          <p>Sanjra created this application using React.</p>
           <p>
-            {" "}
+            Sanjra created this application using React.{" "}
             <a
               className="App-link"
               href="https://github.com/sanjra/elastic-snowflake-react"
